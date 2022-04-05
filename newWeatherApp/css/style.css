@@ -1,0 +1,296 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: #fff;
+} 
+h1, #date {
+    
+    font-family: 'sacramento', cursive;
+    font-size: 22px;
+    /* line-height: 2; */
+}
+
+h2 {
+    font-family: 'Nova Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+#top-container {
+    height: 15vh;
+    width: 100%;
+    position: relative;
+    padding: 10px 0px 0px 20px;
+    margin: 0px;
+    background: linear-gradient(to right, #318ea5, #d9d8da); 
+} 
+
+#container {
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    background-image: url("../images/resul-mentes-DbwYNr8RPbg-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+
+#container #location {
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#container input {
+    height: 60px;
+    width: 300px;
+    margin: 05px 20px;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    outline: none;
+    background: #ffffff50;
+    font-size: 20px;
+    border-radius: 25px 10px;
+    color: #fff;
+}
+
+#container input::placeholder {
+    color: #e2e2e2;
+}
+
+#container input[type="submit"] {
+    cursor: pointer;
+    width: 150px;
+    background: #fff;
+    color: #FF4B2B;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+#transition {
+    position: absolute;
+    width: 46.5%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: rgba(110, 110, 110, 0.25);
+    box-shadow: 0 80x 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.18);
+    z-index: 1;
+    padding: 10px 10px;
+    overflow-y: scroll;
+}
+
+#tempIcon {
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    top: 2.5%;
+    right: 10%;
+}
+
+#tempIcon2 {
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    top: 2.5%;
+    left:9.1% ;
+}
+
+
+#tempIcon3 {
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    right:57% ;
+}
+
+#tempIcon4 {
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    right:10% ;
+}
+
+#weatherCountry {
+    font-size: 55px;
+    position: absolute;
+    top: 40%;
+    margin-left: 10%;
+    float: left;
+    font-family: 'PT Mono', monospace;
+}
+
+#temperature {
+    font-size: 20px;
+    position: absolute;
+    bottom: 58%;
+    left: 70%;
+}
+
+#temperature b {
+    color: #e2e2e290;
+}
+
+#weatherDescription {
+    font-size: 20px;
+    position: absolute;
+    bottom: 55%;
+    left: 67%;
+}
+
+#humidity {
+    font-size: 20px;
+    position: absolute;
+    bottom: 56.5%;
+    right: 62%;
+}
+
+#longitude {
+    font-size: 20px;
+    position: absolute;
+    bottom: 10%;
+    left: 60%; 
+}
+
+#latitude {
+    font-size: 20px;
+    position: absolute;
+    bottom: 10%;
+    left: 10%; 
+}
+
+#feelsLike{
+    visibility: hidden;
+    font-family: 'sacramento', cursive;
+    font-size: 22px;
+    line-height: 2;   
+}
+/* For Mobile devices */
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+
+    
+}
+
+/* For Tablet devices */
+@media only screen and (min-width: 500px) and (max-width: 1150px) {
+    #container {
+        min-height: 130vh;   
+    }
+
+    #tempIcon {
+        height: 300px;
+        width: 200px;
+        margin-top: -15px;
+        margin-right: 60px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+        /* position: absolute;  
+        position: relative;
+        top: 2.5%;
+        right: 23%;  */
+
+    }
+
+    #tempIcon2 {
+        height: 300px;
+        width: 200px;
+        margin-left: 75px;
+        margin-top: 270px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        /* position: relative;
+        top: 41%;
+        left: 30%;   */
+    }
+    
+    
+    #tempIcon3 {
+        height: 300px;
+        width: 200px;
+        left: 75px;
+        margin-top: 200px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        /* position: relative;
+        top: 80%;
+        left:20% ; */
+    }
+    
+    #tempIcon4 {
+        height: 300px;
+        width: 200px;
+        position: relative ;
+        top: 115%;
+        left: 20% ;
+    }
+
+    #temperature {
+        font-size: 20px;
+        position: absolute;
+        top: 37%;
+        left: 43%;
+    }
+    
+    #weatherDescription {
+        font-size: 20px;
+        position: absolute;
+        top: 40%;
+        left: 40%;
+    }
+    
+    #humidity {
+        font-size: 20px;
+        position: absolute;
+        top: 77%;
+        left: 36%;
+    }
+
+    #longitude {
+        font-size: 20px;
+        position: absolute;
+        top: 115%;
+        left: 23%; 
+    }
+    
+    #latitude {
+        font-size: 20px;
+        position: absolute;
+        top: 150%;
+        left: 24%; 
+    } 
+    
+}
+
+
+
+/* 
+#container ul {
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+}
+
+#container ul li {
+    font-size: 22px;
+    margin: 20px 0;
+} */

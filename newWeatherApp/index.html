@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon/images.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body onload='startDate()'>
+    <!-- header -->
+    <div id="top-container">
+            <h1>Hello 💦 </h1>
+            <div id='date'></div>
+    </div>
+
+    <!-- form inputs -->
+    <div id="container">
+        <div id="location">
+            <input type="text" id="country" placeholder="Country">
+            <input type="text" id="city" placeholder="City">
+            <input type="submit" id="check" value="Check">
+        </div>
+
+    <!-- Result output -->
+        <div>
+            <h1 id="weatherCountry">Barcelona/Spain</h1>
+        </div>
+
+    <!--Weather images -->
+        <div id="transition">
+            <img src="assets/clouds.svg" alt="" id="tempIcon">
+            <img src="images/rain-svgrepo-com.svg" alt="" id="tempIcon2">
+            <!-- change 3&4 to latitude icons abeg -->
+            <img src="assets/clouds.svg" alt="" id="tempIcon3">  
+            <img src="assets/clouds.svg" alt="" id="tempIcon4"> 
+
+    <!-- Weather Result display variables -->
+         <div id="weatherDispaly">
+            <h2 id="temperature">18°<b>C</b></h2>
+            <h2 id="weatherDescription">Smooke</h2>
+            <h2 id="humidity">Humidity <b>77%</b></h2>
+            <h2 id="longitude">Longitude 45.33°<b>C</b></h2>
+            <h2 id="latitude">Latitude 17.67°<b>C</b></h2>
+            <li id="feelsLike">Feels Like 44°C</li>
+         </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
